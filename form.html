@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="nofollow"/>
+  <link href="formStyle.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">  
+  <title>Registrazione Concorso a premi</title>
+ </head>
+ <body>
+  <h1>Registrazione Concorso a premi</h1>
+  <form method="post" class="formContainer">
+   <h3>dati personali</h3>
+    <details>
+     <summary>Perchè ti chiediamo questi dati?</summary>  <!--corsivo-->
+      <p class="p_d">Questi dati sono necessari per registrare ogni partecipante!</p>
+    </details>
+    <br />
+   <div class="formTitle">
+    Nome  <input type="text" name="firstname" size="25" required="required" autofocus="autofocus" class="formField"/>
+   </div>
+   <div class="formTitle">
+    Cognome  <input type="text" name="surname" size="25" required="required" class="formField"/>
+   <div class="formTitle">
+    Email  <input type="email" name="email" size="25" required="required" class="formField"/>
+   </div>
+   <div class="formTitle">
+    Telefono  <input type="text" name="num_tel" size="10" required="required" class="formField"/>
+   </div>
+   <h3>Estrazione Premio</h3>
+   <div class="formTitle">
+    Codice Prodotto  <input type="text" name="codice" size="10" required="required" class="formField"/>
+   </div>
+   <div class="formTitle">
+    <h3>SELEZIONA ESTRAZIONE A CUI PARTECIPARE</h3>
+    <select name="premi" class="formTitle">
+     <option value="selected" selected="selected">Seleziona premio a estrazione</option>
+     <option value="viaggio" class="check">Viaggio</option>
+     <option value="auto" class="check">Auto</option>
+     <option value="tv" class="check">Tv</option>
+    </select>
+   </div>
+   <div class="formTitle">
+    <h3>Valuta la bontà del nostro prodotto</h3>
+    <label>0<input type="range" name="prodotto" min="0" max="5" value="0"/>5</label>
+   </div>
+   <br /><br />
+   <textarea rows="10" cols="60" name="commenti">Commenti</textarea><br /><br />
+   <input type="submit" value="INVIA REGISTRAZIONE" class="submitButton"/>
+   <input type="reset" value="CANCELLA REGISTRAZIONE" class="submitButton"/>
+   <br /><br />
+   <a href="mysiteSprizza.html">Return to Home</a>
+  </form>
+ </body>
+</html>
